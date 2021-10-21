@@ -1,0 +1,9 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+      - /var/log/syslog 
+  tags:["ubuntusys"]
+ output.logstash:
+  hosts: ["192.168.10.15:5044"]
+  

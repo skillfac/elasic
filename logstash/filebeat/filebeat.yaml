@@ -21,7 +21,7 @@ filebeat.inputs:
   enabled: true
   paths:
       - /var/log/messages 
-  tags:["centossys"]    
+  tags: ["centossys"]    
 
 output.logstash:
   hosts: ["192.168.10.15:5044"]
